@@ -36,10 +36,16 @@ Para la sesión actual de PowerShell, sin guardar la clave en archivos:
 $env:OPENAI_API_KEY="pega_tu_clave_aqui"
 ```
 
-Opcionalmente, configura el modelo de análisis. El valor por defecto de la aplicación es `gpt-5.6`.
+La interfaz permite elegir estos modelos GPT-5.6:
+
+- `gpt-5.6-sol`: máxima capacidad; recomendado para análisis ecológico complejo.
+- `gpt-5.6-terra`: equilibrio entre capacidad y costo.
+- `gpt-5.6-luna`: alto volumen y costo reducido.
+
+El valor por defecto es `gpt-5.6-sol`. También puedes fijarlo desde el entorno:
 
 ```powershell
-$env:OPENAI_MODEL="gpt-5.6"
+$env:OPENAI_MODEL="gpt-5.6-terra"
 ```
 
 Nunca subas claves al repositorio, al README o a capturas de pantalla.
@@ -73,5 +79,5 @@ python -m unittest discover -s tests -v
 | --- | --- |
 | `conda` no se reconoce | Usa Anaconda Prompt o agrega Conda al PATH. |
 | Falta `OPENAI_API_KEY` | Ejecuta de nuevo el comando del paso 4 en la misma terminal. |
-| Error de modelo | Confirma que tu cuenta tenga acceso a `gpt-5.6` o define `OPENAI_MODEL` con el identificador disponible para tu cuenta. |
+| Error de modelo | Confirma que tu cuenta tenga acceso a Sol, Terra o Luna; también puedes definir `OPENAI_MODEL` con uno de sus IDs. |
 | No hay conexión con iNaturalist | El análisis puede completarse; la validación externa mostrará un mensaje de error. |

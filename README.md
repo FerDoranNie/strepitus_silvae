@@ -22,6 +22,8 @@
 3. **Taxonomic Validator:** iNaturalist verifica de forma condicional identificaciones inciertas.
 4. **Validación y exportación:** Pydantic protege el esquema de salida; la interfaz exporta JSON y CSV.
 
+La interfaz permite elegir GPT-5.6 Sol (máxima capacidad), Terra (equilibrio) o Luna (alto volumen y menor costo).
+
 ### Ejecutar localmente
 
 Consulta la guía completa de [instructions.md](instructions.md). Resumen:
@@ -55,6 +57,8 @@ Cada resultado es una hipótesis asistida por IA. Personal capacitado debe revis
 3. **Taxonomic Validator:** iNaturalist conditionally checks uncertain identifications.
 4. **Validation and export:** Pydantic protects the output schema; the interface exports JSON and CSV.
 
+The interface lets users choose GPT-5.6 Sol (highest capability), Terra (balanced), or Luna (cost-sensitive high volume).
+
 ### Run locally
 
 See the full [instructions.md](instructions.md) guide. Quick start:
@@ -77,6 +81,7 @@ Every result is an AI-assisted hypothesis. Qualified personnel must review it be
 GPT-5.6 is the ecological reasoning and structured-data layer. OpenAI transcription converts field audio to text, while iNaturalist is a conditional external taxonomic verifier. Codex was used to evolve the initial Colab proof of concept into the Streamlit product, its orchestration, schema validation, CSV export, tests, and documentation.
 
 The planned Devpost video narration and recording checklist are in [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md).
+The hosting and final-submission sequence is in [docs/FINAL_DELIVERY_PLAN.md](docs/FINAL_DELIVERY_PLAN.md).
 
 ## Testing
 

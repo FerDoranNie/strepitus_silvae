@@ -9,6 +9,12 @@ import streamlit as st
 from export import observations_to_csv
 from services import analyze_audio, analyze_image
 
+MODEL_OPTIONS = {
+    "GPT-5.6 Sol — máxima capacidad": "gpt-5.6-sol",
+    "GPT-5.6 Terra — equilibrio entre calidad y costo": "gpt-5.6-terra",
+    "GPT-5.6 Luna — alto volumen y costo reducido": "gpt-5.6-luna",
+}
+
 st.set_page_config(page_title="Strepitus Silvae", page_icon="🌿", layout="wide")
 
 st.title("🌿 Strepitus Silvae")
@@ -16,7 +22,15 @@ st.caption("Copiloto de campo para transformar evidencia de fauna en registros D
 
 with st.sidebar:
     st.header("Configuración")
-    model = st.text_input("Modelo de análisis", value=os.getenv("OPENAI_MODEL", "gpt-5.6"))
+    env_model = os.getenv("OPENAI_MODEL", "gpt-5.6-sol")
+    default_label = next((label for label, model_id in MODEL_OPTIONS.items() if model_id == env_model), None)
+    selected_label = st.selectbox(
+        "Modelo de análisis", list(MODEL_OPTIONS),
+        index=list(MODEL_OPTIONS).index(default_label) if default_label else 0,
+    )
+    model = MODEL_OPTIONS[selected_label]
+    if st.checkbox("Usar un identificador de modelo personalizado"):
+        model = st.text_input("Identificador personalizado", value=env_model)
     st.caption("La clave se lee exclusivamente desde `OPENAI_API_KEY` en el entorno.")
 
 tab_image, tab_audio = st.tabs(["📷 Cámara trampa", "🎙️ Nota de voz"])

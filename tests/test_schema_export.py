@@ -5,6 +5,7 @@ from pathlib import Path
 from bioacoustics import _name_parts
 from export import observations_to_csv
 from schema import FieldObservation
+from services import _deduplicate_video_records
 from video_processor import extract_sampled_frames
 
 
@@ -30,6 +31,31 @@ class SchemaAndExportTests(unittest.TestCase):
         scientific, common = _name_parts("Dives_dives_Melodious_Blackbird")
         self.assertEqual(scientific, "Dives dives")
         self.assertEqual(common, "Melodious Blackbird")
+
+    def test_video_records_merge_repeated_taxa_and_keep_maximum_count(self):
+        records = [
+            {
+                "scientificName": "Urocyon cinereoargenteus", "vernacularName": "Zorro gris",
+                "individualCount": 1, "behavior": "caminando", "organismRemarks": "visible",
+                "identificationConfidence": "medio", "alertaHumanaOVehiculo": False,
+            },
+            {
+                "scientificName": "urocyon cinereoargenteus", "vernacularName": "Zorro gris",
+                "individualCount": 2, "behavior": "caminando", "organismRemarks": "visible",
+                "identificationConfidence": "alto", "alertaHumanaOVehiculo": True,
+            },
+            {
+                "scientificName": "Nasua narica", "vernacularName": "Coatí",
+                "individualCount": 1, "behavior": "forrajeando", "organismRemarks": "visible",
+                "identificationConfidence": "alto", "alertaHumanaOVehiculo": False,
+            },
+        ]
+        merged = _deduplicate_video_records(records)
+        self.assertEqual(len(merged), 2)
+        fox = next(record for record in merged if record["scientificName"].casefold() == "urocyon cinereoargenteus")
+        self.assertEqual(fox["individualCount"], 2)
+        self.assertEqual(fox["identificationConfidence"], "alto")
+        self.assertTrue(fox["alertaHumanaOVehiculo"])
 
     def test_video_frame_extraction(self):
         import cv2

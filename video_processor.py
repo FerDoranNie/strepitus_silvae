@@ -11,7 +11,7 @@ class VideoProcessingError(RuntimeError):
     """Raised for unreadable or frame-less video uploads."""
 
 
-def extract_sampled_frames(data: bytes, filename: str, sample_count: int = 6) -> list[str]:
+def extract_sampled_frames(data: bytes, filename: str, sample_count: int = 12) -> list[str]:
     try:
         import cv2
     except ImportError as error:

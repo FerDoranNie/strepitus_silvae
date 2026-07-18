@@ -4,3 +4,7 @@ pyinaturalist>=0.20.0
 pydantic>=2.0.0
 birdnet>=0.2.16
 opencv-python-headless>=4.10.0
+python-dotenv>=1.0.0
+folium>=0.17.0
+streamlit-folium>=0.22.0
+pygbif>=0.6.6

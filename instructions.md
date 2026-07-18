@@ -65,6 +65,8 @@ Streamlit mostrará una URL local, normalmente `http://localhost:8501`. Ábrela 
 3. Selecciona **Analizar evidencia**.
 4. Revisa el resultado antes de descargar JSON o CSV.
 
+En la pestaña **Audio**, usa *Nota de campo humana* para una observación hablada y *Vocalización de ave (BirdNET beta)* para un canto. La primera ejecución de BirdNET puede tardar mientras descarga sus modelos locales. La pestaña **Video** extrae seis fotogramas y los analiza como evidencia visual; los videos no se envían como una modalidad nativa a GPT-5.6.
+
 Una confianza `medio` o `bajo` activa una consulta de validación a iNaturalist. Todo resultado es una hipótesis asistida por IA: una persona capacitada debe revisarlo antes de usarlo en decisiones científicas o de conservación.
 
 ## Verificar la instalación

@@ -1,7 +1,11 @@
 import unittest
+import tempfile
+from pathlib import Path
 
+from bioacoustics import _name_parts
 from export import observations_to_csv
 from schema import FieldObservation
+from video_processor import extract_sampled_frames
 
 
 class SchemaAndExportTests(unittest.TestCase):
@@ -21,6 +25,25 @@ class SchemaAndExportTests(unittest.TestCase):
         csv_text = observations_to_csv([self.observation])
         self.assertIn("scientificName", csv_text)
         self.assertIn("Puma concolor", csv_text)
+
+    def test_birdnet_name_parser(self):
+        scientific, common = _name_parts("Dives_dives_Melodious_Blackbird")
+        self.assertEqual(scientific, "Dives dives")
+        self.assertEqual(common, "Melodious Blackbird")
+
+    def test_video_frame_extraction(self):
+        import cv2
+        import numpy as np
+
+        with tempfile.TemporaryDirectory() as directory:
+            video_path = Path(directory) / "fixture.avi"
+            writer = cv2.VideoWriter(str(video_path), cv2.VideoWriter_fourcc(*"MJPG"), 5, (32, 32))
+            for value in (0, 90, 180):
+                writer.write(np.full((32, 32, 3), value, dtype=np.uint8))
+            writer.release()
+            frames = extract_sampled_frames(video_path.read_bytes(), video_path.name, sample_count=3)
+        self.assertEqual(len(frames), 3)
+        self.assertTrue(all(frame.startswith("data:image/jpeg;base64,") for frame in frames))
 
 
 if __name__ == "__main__":

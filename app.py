@@ -8,7 +8,7 @@ from typing import Any
 import streamlit as st
 
 from export import observations_to_csv
-from services import analyze_audio, analyze_image
+from services import analyze_audio, analyze_bird_audio, analyze_image, analyze_video
 
 MODEL_OPTIONS = {
     "GPT-5.6 Sol — máxima capacidad": "gpt-5.6-sol",
@@ -61,6 +61,10 @@ def render_analysis_result(result: dict[str, Any]) -> None:
         else:
             st.warning(validation.get("mensaje", "La consulta a iNaturalist no devolvió una coincidencia."))
 
+    if result.get("bioacousticCandidates"):
+        st.subheader("Candidatos bioacústicos de BirdNET (beta)")
+        st.dataframe(result["bioacousticCandidates"], hide_index=True, use_container_width=True)
+
     if result.get("transcripcion"):
         with st.expander("Transcripción original"):
             st.write(result["transcripcion"])
@@ -88,7 +92,7 @@ with st.sidebar:
         model = st.text_input("Identificador personalizado", value=env_model)
     st.caption("La clave se lee exclusivamente desde `OPENAI_API_KEY` en el entorno.")
 
-tab_image, tab_audio = st.tabs(["📷 Cámara trampa", "🎙️ Nota de voz"])
+tab_image, tab_audio, tab_video = st.tabs(["📷 Cámara trampa", "🎙️ Audio", "🎞️ Video"])
 
 with tab_image:
     upload = st.file_uploader("Carga una foto de cámara trampa", type=["jpg", "jpeg", "png", "webp"])
@@ -96,8 +100,14 @@ with tab_image:
         st.image(upload, caption=upload.name, use_container_width=True)
 
 with tab_audio:
+    audio_mode = st.radio("Tipo de audio", ["Nota de campo humana", "Vocalización de ave (BirdNET beta)"], horizontal=True)
     audio = st.audio_input("Graba una nota de campo")
     audio_upload = st.file_uploader("o carga un audio", type=["mp3", "wav", "m4a", "ogg"], key="audio_file")
+
+with tab_video:
+    video_upload = st.file_uploader("Carga un video de cámara trampa", type=["mp4", "mov", "avi", "webm"])
+    if video_upload:
+        st.video(video_upload)
 
 st.divider()
 st.subheader("Contexto del evento")
@@ -111,10 +121,11 @@ with col3:
 locality = st.text_input("Localidad (opcional)", placeholder="Reserva / estación de monitoreo")
 
 if st.button("Analizar evidencia", type="primary", use_container_width=True):
-    evidence = upload or audio or audio_upload
+    evidence = upload or audio or audio_upload or video_upload
+    requires_openai = bool(upload or video_upload or ((audio or audio_upload) and audio_mode == "Nota de campo humana"))
     if not evidence:
         st.error("Carga una imagen o graba/carga un audio antes de analizar.")
-    elif not os.getenv("OPENAI_API_KEY"):
+    elif requires_openai and not os.getenv("OPENAI_API_KEY"):
         st.error("Falta `OPENAI_API_KEY`. Agrégala a tus variables de entorno y reinicia la app.")
     else:
         context = {
@@ -127,9 +138,14 @@ if st.button("Analizar evidencia", type="primary", use_container_width=True):
             with st.spinner("El equipo de agentes está procesando la evidencia…"):
                 if upload:
                     result = analyze_image(upload.getvalue(), upload.type or "image/jpeg", model, context)
+                elif video_upload:
+                    result = analyze_video(video_upload.getvalue(), video_upload.name, model, context)
                 else:
                     source = audio or audio_upload
-                    result = analyze_audio(source.getvalue(), source.name, source.type or "audio/wav", model, context)
+                    if audio_mode == "Vocalización de ave (BirdNET beta)":
+                        result = analyze_bird_audio(source.getvalue(), source.name, context)
+                    else:
+                        result = analyze_audio(source.getvalue(), source.name, source.type or "audio/wav", model, context)
             st.success("Registro listo para revisión humana.")
             render_analysis_result(result)
             st.download_button(

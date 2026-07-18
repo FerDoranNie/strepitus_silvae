@@ -9,7 +9,9 @@ from openai import OpenAI
 from pyinaturalist import get_taxa
 
 from audio_structurer import structure_audio_note
+from bioacoustics import analyze_bird_vocalization
 from schema import FieldObservation
+from video_processor import extract_sampled_frames
 
 SCHEMA = {
     "type": "object",
@@ -64,6 +66,20 @@ def analyze_image(data: bytes, mime_type: str, model: str, context: dict[str, An
 def analyze_audio(data: bytes, filename: str, mime_type: str, model: str, context: dict[str, Any]) -> dict[str, Any]:
     record, _ = structure_audio_note(_client(), data, filename, mime_type, model, context, _structured)
     return _enrich(record, context)
+
+
+def analyze_bird_audio(data: bytes, filename: str, context: dict[str, Any]) -> dict[str, Any]:
+    return _enrich(analyze_bird_vocalization(data, filename), context)
+
+
+def analyze_video(data: bytes, filename: str, model: str, context: dict[str, Any]) -> dict[str, Any]:
+    frame_urls = extract_sampled_frames(data, filename)
+    content = [{"type": "input_text", "text": (
+        f"Estos son fotogramas espaciados del mismo video de cámara trampa. Contexto conocido: {json.dumps(context)}. "
+        "Genera una única observación conservadora que represente la fauna más claramente visible en el video."
+    )}]
+    content.extend({"type": "input_image", "image_url": frame_url} for frame_url in frame_urls)
+    return _enrich(_structured([{"role": "user", "content": content}], model), context)
 
 
 def validate_taxon(query: str) -> dict[str, Any]:

@@ -18,6 +18,12 @@ class TaxonValidation(BaseModel):
     mensaje: str | None = None
 
 
+class BioacousticCandidate(BaseModel):
+    scientificName: str
+    vernacularName: str
+    confidence: float = Field(ge=0, le=1)
+
+
 class FieldObservation(BaseModel):
     """A reviewable observation using Darwin Core terms where available."""
 
@@ -38,3 +44,4 @@ class FieldObservation(BaseModel):
     identifiedBy: str
     validacionExterna: TaxonValidation | None = None
     transcripcion: str | None = None
+    bioacousticCandidates: list[BioacousticCandidate] | None = None

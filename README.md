@@ -12,6 +12,7 @@
 
 - Analiza evidencia de fauna para proponer especie, número de individuos, comportamiento, condición visible y presencia de personas o vehículos.
 - Transcribe notas de campo y las transforma al mismo registro estructurado.
+- Identifica vocalizaciones de aves con BirdNET (beta) y analiza videos de cámara trampa mediante fotogramas.
 - Cuando la confianza es `medio` o `bajo`, realiza una validación taxonómica condicional mediante iNaturalist.
 - Valida cada resultado con Pydantic y permite descargar JSON o CSV alineado con Darwin Core.
 
@@ -47,6 +48,7 @@ Cada resultado es una hipótesis asistida por IA. Personal capacitado debe revis
 
 - Analyzes wildlife evidence to propose species, individual count, behavior, visible condition, and human or vehicle presence.
 - Transcribes field notes and maps them to the same structured observation record.
+- Identifies bird vocalizations with BirdNET (beta) and analyzes camera-trap video through sampled frames.
 - When confidence is `medio` or `bajo`, conditionally cross-checks the taxon through iNaturalist.
 - Validates each result with Pydantic and exports Darwin Core-aligned JSON or CSV.
 
@@ -82,6 +84,7 @@ GPT-5.6 is the ecological reasoning and structured-data layer. OpenAI transcript
 
 The planned Devpost video narration and recording checklist are in [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md).
 The hosting and final-submission sequence is in [docs/FINAL_DELIVERY_PLAN.md](docs/FINAL_DELIVERY_PLAN.md).
+Third-party model and data notices are in [docs/THIRD_PARTY_NOTICES.md](docs/THIRD_PARTY_NOTICES.md).
 
 ## Testing
 

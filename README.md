@@ -1,3 +1,14 @@
+---
+title: Strepitus Silvae
+emoji: 🌿
+colorFrom: green
+colorTo: blue
+sdk: docker
+app_port: 7860
+fullWidth: true
+short_description: AI-assisted wildlife evidence to reviewable Darwin Core records.
+---
+
 # Strepitus Silvae
 
 **AI-assisted field-data copilot for conservation teams.** It transforms camera-trap images and spoken field notes into reviewable, Darwin Core-aligned observation records.
@@ -43,6 +54,10 @@ $env:OPENAI_API_KEY="tu_clave"
 streamlit run app.py
 ```
 
+### Desplegar en Hugging Face Spaces
+
+El repositorio incluye la configuración para una Space Docker (`Dockerfile` y el encabezado YAML superior). Crea una Space de tipo **Docker** y agrega `OPENAI_API_KEY` en **Settings → Secrets**. Las variables no secretas opcionales son `OPENAI_MODEL`, `OPENAI_IMAGE_MODEL` y `OPENAI_IMAGE_QUALITY`. No subas `.env` ni `.streamlit/secrets.toml`.
+
 ### Uso responsable
 
 Cada resultado es una hipótesis asistida por IA. Personal capacitado debe revisarlo antes de usarlo en decisiones científicas, regulatorias o de conservación.
@@ -85,6 +100,10 @@ python -m pip install -r requirements.txt
 $env:OPENAI_API_KEY="your_key"
 streamlit run app.py
 ```
+
+### Deploy on Hugging Face Spaces
+
+The repository includes a Docker Space configuration (`Dockerfile` and the YAML header above). Create a **Docker** Space, then add `OPENAI_API_KEY` in **Settings → Secrets**. Optional non-secret variables are `OPENAI_MODEL`, `OPENAI_IMAGE_MODEL`, and `OPENAI_IMAGE_QUALITY`. Do not upload `.env` or `.streamlit/secrets.toml`.
 
 ### Responsible use
 

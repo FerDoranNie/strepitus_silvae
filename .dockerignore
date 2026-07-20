@@ -1,0 +1,13 @@
+.git
+.gitignore
+.env
+.venv
+__pycache__
+*.py[cod]
+.pytest_cache
+.mypy_cache
+.streamlit/secrets.toml
+tests
+DESIGN.md
+Agents.md
+assets/procedural

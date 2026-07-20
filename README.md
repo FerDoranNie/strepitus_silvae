@@ -6,7 +6,7 @@ colorTo: blue
 sdk: docker
 app_port: 7860
 fullWidth: true
-short_description: AI-assisted wildlife evidence to reviewable Darwin Core records.
+short_description: Wildlife evidence to reviewable Darwin Core records.
 ---
 
 # Strepitus Silvae

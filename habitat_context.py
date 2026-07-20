@@ -27,6 +27,7 @@ def habitat_profile(latitude: float, longitude: float, requested_radius_km: int)
         "longitude": longitude,
         "radius_m": radius_m,
         "elevation_m": round(elevations[0]) if elevations else None,
+        "elevation_samples_m": [round(value, 1) for value in elevations],
         "local_relief_m": round(max(elevations) - min(elevations)) if len(elevations) > 1 else None,
         **osm_summary,
         **climate_summary,

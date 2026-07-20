@@ -6,15 +6,16 @@
 - Add a **Demo mode** that never calls OpenAI or iNaturalist and does not require an API key.
 - Verify the complete live path separately using the project owner's own credentials.
 
-## Optional stretch feature — Only after Saturday tests pass
+## Implemented contextual features — Maintain and verify
 
-Add a small **Nearby biodiversity context** panel only if the complete image/audio flows, exports, tests, and demo mode are already stable.
+The nearby biodiversity context is implemented and must remain clearly bounded.
 
-- Use the record's latitude and longitude to query nearby documented taxa from iNaturalist.
-- Show at most ten taxa with source, search radius, and observation-date context when available.
-- Label every result as **documented nearby observations**, never as a claim that a species is currently present at the exact point.
-- Do not add eBird, Three.js, a 3D simulation, or native mobile work during the hackathon.
-- Remove the panel immediately if it weakens reliability or the demo timeline.
+- Use the record's latitude and longitude to query nearby documented taxa from iNaturalist and GBIF.
+- Label every result as historical/community context, never as a claim that a species is currently present at the exact point.
+- The environmental profile combines local 2D map layers, climate/vegetation inference, limited OSM infrastructure, and a bounded GBIF occurrence summary.
+- The Species Wiki Explorer is a **public reference card**, not an identification engine: it shows Wikipedia/Wikidata context after evidence analysis without changing the detection.
+- Wikipedia, Wikidata, GBIF and IUCN links provide references only; they never override evidence-based identification confidence.
+- Do not add native mobile work or generated habitat imagery presented as evidence during the hackathon.
 
 ## Monday, July 20 — Publish the testable product
 

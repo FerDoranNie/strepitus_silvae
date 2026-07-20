@@ -36,7 +36,15 @@
 
 > For spoken notes, the audio agent first creates a transcription, then GPT-5.6 maps the unstructured language into the same validated observation schema. Image and audio therefore become comparable records instead of separate manual workflows.
 
-## 1:50–2:15 — Standardized, reviewable output
+## 1:50–2:07 — Environmental and species context
+
+**Show:** The local 2D environmental map, the bounded GBIF nearby-record summary, then the species explorer for the detected taxon.
+
+**Narration:**
+
+> When coordinates are available, Strepitus Silvae adds context without changing the evidence-based identification: nearby community and GBIF records, mapped infrastructure, environmental layers, and a Species Wiki Explorer. Public reference links and conservation labels still require scientific verification.
+
+## 2:07–2:23 — Standardized, reviewable output
 
 **Show:** The JSON panel and both download buttons. Open the downloaded CSV briefly.
 
@@ -44,7 +52,7 @@
 
 > Before export, Pydantic validates the record against our Darwin Core-aligned schema. The team can download reviewable JSON or CSV ready for a scientific database. This is intentionally AI-assisted: the interface states that trained staff must review every record before it is used for conservation decisions.
 
-## 2:15–2:35 — How OpenAI tools were used and close
+## 2:23–2:35 — How OpenAI tools were used and close
 
 **Show:** A simple architecture slide: evidence → GPT-5.6 / transcription → validation → Darwin Core export. Then show the repository README.
 

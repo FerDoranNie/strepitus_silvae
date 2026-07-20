@@ -35,6 +35,7 @@ class FieldObservation(BaseModel):
     behavior: str
     organismRemarks: str
     identificationConfidence: Literal["alto", "medio", "bajo"]
+    identificationProbability: int | None = Field(default=None, ge=0, le=100)
     alertaHumanaOVehiculo: bool
     eventDate: date
     decimalLatitude: float | None = Field(default=None, ge=-90, le=90)

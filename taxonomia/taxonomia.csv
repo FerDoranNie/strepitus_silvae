@@ -1,0 +1,639 @@
+Grupo,Orden,Familia,Arquetipo visual,Ejemplo
+Mamíferos,Monotremata,Ornithorhynchidae,Monotrema (pico de pato/equidna),N/A
+Mamíferos,Monotremata,Tachyglossidae,Monotrema (pico de pato/equidna),N/A
+Mamíferos,Didelphimorphia,Didelphidae,Marsupial americano,N/A
+Mamíferos,Paucituberculata,Caenolestidae,Marsupial ratón andino,N/A
+Mamíferos,Microbiotheria,Microbiotheriidae,Marsupial arborícola,N/A
+Mamíferos,Dasyuromorphia,Dasyuridae,Marsupial carnívoro,N/A
+Mamíferos,Dasyuromorphia,Myrmecobiidae,Marsupial carnívoro,N/A
+Mamíferos,Dasyuromorphia,Thylacinidae,Marsupial carnívoro,N/A
+Mamíferos,Peramelemorphia,Peramelidae,Bandicut,N/A
+Mamíferos,Peramelemorphia,Thylacomyidae,Bandicut,N/A
+Mamíferos,Peramelemorphia,Chaeropodidae,Bandicut,N/A
+Mamíferos,Notoryctemorphia,Notoryctidae,Marsupial excavador ciego,N/A
+Mamíferos,Diprotodontia,Macropodidae,Marsupial herbívoro,N/A
+Mamíferos,Diprotodontia,Potoroidae,Marsupial herbívoro,N/A
+Mamíferos,Diprotodontia,Vombatidae,Marsupial herbívoro,N/A
+Mamíferos,Diprotodontia,Phascolarctidae,Marsupial herbívoro,N/A
+Mamíferos,Diprotodontia,Phalangeridae,Marsupial herbívoro,N/A
+Mamíferos,Diprotodontia,Petauridae,Marsupial herbívoro,N/A
+Mamíferos,Diprotodontia,Pseudocheiridae,Marsupial herbívoro,N/A
+Mamíferos,Diprotodontia,Acrobatidae,Marsupial herbívoro,N/A
+Mamíferos,Diprotodontia,Burramyidae,Marsupial herbívoro,N/A
+Mamíferos,Diprotodontia,Tarsipedidae,Marsupial herbívoro,N/A
+Mamíferos,Diprotodontia,Hypsiprymnodontidae,Marsupial herbívoro,N/A
+Mamíferos,Cingulata,Dasypodidae,Armadillo,N/A
+Mamíferos,Cingulata,Chlamyphoridae,Armadillo,N/A
+Mamíferos,Pilosa,Bradypodidae,Perezoso/oso hormiguero,N/A
+Mamíferos,Pilosa,Megalonychidae,Perezoso/oso hormiguero,N/A
+Mamíferos,Pilosa,Myrmecophagidae,Perezoso/oso hormiguero,N/A
+Mamíferos,Pilosa,Cyclopedidae,Perezoso/oso hormiguero,N/A
+Mamíferos,Afrosoricida,Tenrecidae,Tenrec/topo dorado,N/A
+Mamíferos,Afrosoricida,Chrysochloridae,Tenrec/topo dorado,N/A
+Mamíferos,Macroscelidea,Macroscelididae,Musaraña elefante,N/A
+Mamíferos,Tubulidentata,Orycteropodidae,Cerdo hormiguero,N/A
+Mamíferos,Hyracoidea,Procaviidae,Damán,N/A
+Mamíferos,Proboscidea,Elephantidae,Elefante,elefante africano
+Mamíferos,Sirenia,Dugongidae,Manatí/dugongo,N/A
+Mamíferos,Sirenia,Trichechidae,Manatí/dugongo,N/A
+Mamíferos,Scandentia,Tupaiidae,Musaraña arborícola,N/A
+Mamíferos,Scandentia,Ptilocercidae,Musaraña arborícola,N/A
+Mamíferos,Dermoptera,Cynocephalidae,Colugo/galeopiteco,N/A
+Mamíferos,Primates,Cheirogaleidae,Primate,N/A
+Mamíferos,Primates,Lemuridae,Primate,N/A
+Mamíferos,Primates,Lepilemuridae,Primate,N/A
+Mamíferos,Primates,Indriidae,Primate,N/A
+Mamíferos,Primates,Daubentoniidae,Primate,N/A
+Mamíferos,Primates,Galagidae,Primate,N/A
+Mamíferos,Primates,Lorisidae,Primate,N/A
+Mamíferos,Primates,Tarsiidae,Primate,N/A
+Mamíferos,Primates,Cebidae,Primate,N/A
+Mamíferos,Primates,Aotidae,Primate,N/A
+Mamíferos,Primates,Pitheciidae,Primate,N/A
+Mamíferos,Primates,Atelidae,Primate,N/A
+Mamíferos,Primates,Cercopithecidae,Primate,N/A
+Mamíferos,Primates,Hylobatidae,Primate,N/A
+Mamíferos,Primates,Hominidae,Primate,humano
+Mamíferos,Lagomorpha,Leporidae,Conejo/liebre/pika,conejo europeo
+Mamíferos,Lagomorpha,Ochotonidae,Conejo/liebre/pika,N/A
+Mamíferos,Rodentia,Sciuridae,Roedor,N/A
+Mamíferos,Rodentia,Castoridae,Roedor,N/A
+Mamíferos,Rodentia,Geomyidae,Roedor,N/A
+Mamíferos,Rodentia,Heteromyidae,Roedor,N/A
+Mamíferos,Rodentia,Dipodidae,Roedor,N/A
+Mamíferos,Rodentia,Gliridae,Roedor,N/A
+Mamíferos,Rodentia,Nesomyidae,Roedor,N/A
+Mamíferos,Rodentia,Cricetidae,Roedor,N/A
+Mamíferos,Rodentia,Muridae,Roedor,ratón doméstico
+Mamíferos,Rodentia,Spalacidae,Roedor,N/A
+Mamíferos,Rodentia,Calomyscidae,Roedor,N/A
+Mamíferos,Rodentia,Platacanthomyidae,Roedor,N/A
+Mamíferos,Rodentia,Anomaluridae,Roedor,N/A
+Mamíferos,Rodentia,Pedetidae,Roedor,N/A
+Mamíferos,Rodentia,Ctenodactylidae,Roedor,N/A
+Mamíferos,Rodentia,Diatomyidae,Roedor,N/A
+Mamíferos,Rodentia,Hystricidae,Roedor,N/A
+Mamíferos,Rodentia,Petromuridae,Roedor,N/A
+Mamíferos,Rodentia,Thryonomyidae,Roedor,N/A
+Mamíferos,Rodentia,Bathyergidae,Roedor,N/A
+Mamíferos,Rodentia,Erethizontidae,Roedor,N/A
+Mamíferos,Rodentia,Chinchillidae,Roedor,N/A
+Mamíferos,Rodentia,Dinomyidae,Roedor,N/A
+Mamíferos,Rodentia,Caviidae,Roedor,N/A
+Mamíferos,Rodentia,Dasyproctidae,Roedor,N/A
+Mamíferos,Rodentia,Cuniculidae,Roedor,N/A
+Mamíferos,Rodentia,Ctenomyidae,Roedor,N/A
+Mamíferos,Rodentia,Octodontidae,Roedor,N/A
+Mamíferos,Rodentia,Abrocomidae,Roedor,N/A
+Mamíferos,Rodentia,Echimyidae,Roedor,N/A
+Mamíferos,Rodentia,Myocastoridae,Roedor,N/A
+Mamíferos,Rodentia,Capromyidae,Roedor,N/A
+Mamíferos,Eulipotyphla,Erinaceidae,Erizo/musaraña/topo,N/A
+Mamíferos,Eulipotyphla,Talpidae,Erizo/musaraña/topo,N/A
+Mamíferos,Eulipotyphla,Solenodontidae,Erizo/musaraña/topo,N/A
+Mamíferos,Eulipotyphla,Soricidae,Erizo/musaraña/topo,N/A
+Mamíferos,Chiroptera,Pteropodidae,Murciélago,N/A
+Mamíferos,Chiroptera,Rhinolophidae,Murciélago,N/A
+Mamíferos,Chiroptera,Hipposideridae,Murciélago,N/A
+Mamíferos,Chiroptera,Megadermatidae,Murciélago,N/A
+Mamíferos,Chiroptera,Rhinopomatidae,Murciélago,N/A
+Mamíferos,Chiroptera,Craseonycteridae,Murciélago,N/A
+Mamíferos,Chiroptera,Emballonuridae,Murciélago,N/A
+Mamíferos,Chiroptera,Nycteridae,Murciélago,N/A
+Mamíferos,Chiroptera,Mystacinidae,Murciélago,N/A
+Mamíferos,Chiroptera,Noctilionidae,Murciélago,N/A
+Mamíferos,Chiroptera,Furipteridae,Murciélago,N/A
+Mamíferos,Chiroptera,Thyropteridae,Murciélago,N/A
+Mamíferos,Chiroptera,Natalidae,Murciélago,N/A
+Mamíferos,Chiroptera,Molossidae,Murciélago,N/A
+Mamíferos,Chiroptera,Vespertilionidae,Murciélago,N/A
+Mamíferos,Chiroptera,Miniopteridae,Murciélago,N/A
+Mamíferos,Chiroptera,Phyllostomidae,Murciélago,N/A
+Mamíferos,Chiroptera,Mormoopidae,Murciélago,N/A
+Mamíferos,Pholidota,Manidae,Pangolín,N/A
+Mamíferos,Carnivora,Canidae,Carnívoro,zorro
+Mamíferos,Carnivora,Ursidae,Carnívoro,oso pardo
+Mamíferos,Carnivora,Ailuridae,Carnívoro,N/A
+Mamíferos,Carnivora,Mephitidae,Carnívoro,N/A
+Mamíferos,Carnivora,Mustelidae,Carnívoro,N/A
+Mamíferos,Carnivora,Procyonidae,Carnívoro,N/A
+Mamíferos,Carnivora,Otariidae,Carnívoro,N/A
+Mamíferos,Carnivora,Odobenidae,Carnívoro,N/A
+Mamíferos,Carnivora,Phocidae,Carnívoro,N/A
+Mamíferos,Carnivora,Felidae,Carnívoro,león
+Mamíferos,Carnivora,Hyaenidae,Carnívoro,N/A
+Mamíferos,Carnivora,Viverridae,Carnívoro,N/A
+Mamíferos,Carnivora,Nandiniidae,Carnívoro,N/A
+Mamíferos,Carnivora,Eupleridae,Carnívoro,N/A
+Mamíferos,Carnivora,Herpestidae,Carnívoro,N/A
+Mamíferos,Carnivora,Prionodontidae,Carnívoro,N/A
+Mamíferos,Perissodactyla,Equidae,Ungulado de dedo impar,caballo
+Mamíferos,Perissodactyla,Tapiridae,Ungulado de dedo impar,N/A
+Mamíferos,Perissodactyla,Rhinocerotidae,Ungulado de dedo impar,N/A
+Mamíferos,Artiodactyla,Suidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Tayassuidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Hippopotamidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Camelidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Tragulidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Giraffidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Antilocapridae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Cervidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Moschidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Bovidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Balaenidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Balaenopteridae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Eschrichtiidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Neobalaenidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Physeteridae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Kogiidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Ziphiidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Platanistidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Iniidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Pontoporiidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Lipotidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Delphinidae,Ungulado de dedo par / cetáceo,delfín mular
+Mamíferos,Artiodactyla,Monodontidae,Ungulado de dedo par / cetáceo,N/A
+Mamíferos,Artiodactyla,Phocoenidae,Ungulado de dedo par / cetáceo,N/A
+Aves,Struthioniformes,Struthionidae,Ave corredora gigante,N/A
+Aves,Rheiformes,Rheidae,Ave corredora sudamericana,N/A
+Aves,Tinamiformes,Tinamidae,Ave terrestre robusta,N/A
+Aves,Casuariiformes,Casuariidae,Ave corredora con casco,N/A
+Aves,Casuariiformes,Dromaiidae,Ave corredora con casco,N/A
+Aves,Apterygiformes,Apterygidae,Ave no voladora nocturna,N/A
+Aves,Anseriformes,Anhimidae,Ave acuática,N/A
+Aves,Anseriformes,Anseranatidae,Ave acuática,N/A
+Aves,Anseriformes,Anatidae,Ave acuática,Aythya affinis
+Aves,Galliformes,Megapodiidae,Ave galliforme terrestre,N/A
+Aves,Galliformes,Cracidae,Ave galliforme terrestre,N/A
+Aves,Galliformes,Numididae,Ave galliforme terrestre,N/A
+Aves,Galliformes,Odontophoridae,Ave galliforme terrestre,N/A
+Aves,Galliformes,Phasianidae,Ave galliforme terrestre,N/A
+Aves,Podicipediformes,Podicipedidae,Ave zambullidora,N/A
+Aves,Phoenicopteriformes,Phoenicopteridae,Ave zancuda rosada,N/A
+Aves,Columbiformes,Columbidae,Paloma,N/A
+Aves,Mesitornithiformes,Mesitornithidae,Ave terrestre malgache,N/A
+Aves,Pterocliformes,Pteroclidae,Ganga,N/A
+Aves,Otidiformes,Otididae,Avutarda,N/A
+Aves,Musophagiformes,Musophagidae,Turaco,N/A
+Aves,Cuculiformes,Cuculidae,Cuco,N/A
+Aves,Caprimulgiformes,Caprimulgidae,Ave nocturna de boca ancha,N/A
+Aves,Caprimulgiformes,Nyctibiidae,Ave nocturna de boca ancha,N/A
+Aves,Caprimulgiformes,Podargidae,Ave nocturna de boca ancha,N/A
+Aves,Caprimulgiformes,Steatornithidae,Ave nocturna de boca ancha,N/A
+Aves,Caprimulgiformes,Aegothelidae,Ave nocturna de boca ancha,N/A
+Aves,Apodiformes,Apodidae,Vencejo/colibrí,N/A
+Aves,Apodiformes,Hemiprocnidae,Vencejo/colibrí,N/A
+Aves,Apodiformes,Trochilidae,Vencejo/colibrí,colibrí
+Aves,Gruiformes,Gruidae,Grulla/rálido,N/A
+Aves,Gruiformes,Aramidae,Grulla/rálido,N/A
+Aves,Gruiformes,Psophiidae,Grulla/rálido,N/A
+Aves,Gruiformes,Rallidae,Grulla/rálido,N/A
+Aves,Gruiformes,Heliornithidae,Grulla/rálido,N/A
+Aves,Gruiformes,Sarothruridae,Grulla/rálido,N/A
+Aves,Charadriiformes,Burhinidae,Ave playera,N/A
+Aves,Charadriiformes,Charadriidae,Ave playera,N/A
+Aves,Charadriiformes,Haematopodidae,Ave playera,N/A
+Aves,Charadriiformes,Recurvirostridae,Ave playera,N/A
+Aves,Charadriiformes,Ibidorhynchidae,Ave playera,N/A
+Aves,Charadriiformes,Pluvianellidae,Ave playera,N/A
+Aves,Charadriiformes,Chionidae,Ave playera,N/A
+Aves,Charadriiformes,Rostratulidae,Ave playera,N/A
+Aves,Charadriiformes,Jacanidae,Ave playera,N/A
+Aves,Charadriiformes,Pedionomidae,Ave playera,N/A
+Aves,Charadriiformes,Thinocoridae,Ave playera,N/A
+Aves,Charadriiformes,Scolopacidae,Ave playera,N/A
+Aves,Charadriiformes,Turnicidae,Ave playera,N/A
+Aves,Charadriiformes,Glareolidae,Ave playera,N/A
+Aves,Charadriiformes,Laridae,Ave playera,N/A
+Aves,Charadriiformes,Stercorariidae,Ave playera,N/A
+Aves,Charadriiformes,Alcidae,Ave playera,N/A
+Aves,Gaviiformes,Gaviidae,Ave buceadora del norte,N/A
+Aves,Sphenisciformes,Spheniscidae,Pingüino,pingüino de Humboldt
+Aves,Procellariiformes,Diomedeidae,Ave marina pelágica,N/A
+Aves,Procellariiformes,Procellariidae,Ave marina pelágica,N/A
+Aves,Procellariiformes,Hydrobatidae,Ave marina pelágica,N/A
+Aves,Procellariiformes,Oceanitidae,Ave marina pelágica,N/A
+Aves,Ciconiiformes,Ciconiidae,Cigüeña,N/A
+Aves,Suliformes,Fregatidae,Ave marina zambullidora,N/A
+Aves,Suliformes,Sulidae,Ave marina zambullidora,N/A
+Aves,Suliformes,Anhingidae,Ave marina zambullidora,N/A
+Aves,Suliformes,Phalacrocoracidae,Ave marina zambullidora,N/A
+Aves,Pelecaniformes,Pelecanidae,Pelícano/garza,N/A
+Aves,Pelecaniformes,Ardeidae,Pelícano/garza,N/A
+Aves,Pelecaniformes,Threskiornithidae,Pelícano/garza,N/A
+Aves,Pelecaniformes,Scopidae,Pelícano/garza,N/A
+Aves,Cathartiformes,Cathartidae,Buitre americano,N/A
+Aves,Accipitriformes,Pandionidae,Ave rapaz diurna,N/A
+Aves,Accipitriformes,Accipitridae,Ave rapaz diurna,N/A
+Aves,Accipitriformes,Sagittariidae,Ave rapaz diurna,N/A
+Aves,Strigiformes,Tytonidae,Búho/lechuza,N/A
+Aves,Strigiformes,Strigidae,Búho/lechuza,búho real
+Aves,Trogoniformes,Trogonidae,Trogón,N/A
+Aves,Bucerotiformes,Bucerotidae,Cálao,N/A
+Aves,Bucerotiformes,Bucorvidae,Cálao,N/A
+Aves,Bucerotiformes,Upupidae,Cálao,N/A
+Aves,Bucerotiformes,Phoeniculidae,Cálao,N/A
+Aves,Coraciiformes,Coraciidae,Martín pescador,N/A
+Aves,Coraciiformes,Brachypteraciidae,Martín pescador,N/A
+Aves,Coraciiformes,Meropidae,Martín pescador,N/A
+Aves,Coraciiformes,Momotidae,Martín pescador,N/A
+Aves,Coraciiformes,Todidae,Martín pescador,N/A
+Aves,Coraciiformes,Alcedinidae,Martín pescador,N/A
+Aves,Piciformes,Galbulidae,Pájaro carpintero/tucán,N/A
+Aves,Piciformes,Bucconidae,Pájaro carpintero/tucán,N/A
+Aves,Piciformes,Capitonidae,Pájaro carpintero/tucán,N/A
+Aves,Piciformes,Semnornithidae,Pájaro carpintero/tucán,N/A
+Aves,Piciformes,Ramphastidae,Pájaro carpintero/tucán,N/A
+Aves,Piciformes,Megalaimidae,Pájaro carpintero/tucán,N/A
+Aves,Piciformes,Lybiidae,Pájaro carpintero/tucán,N/A
+Aves,Piciformes,Indicatoridae,Pájaro carpintero/tucán,N/A
+Aves,Piciformes,Picidae,Pájaro carpintero/tucán,pájaro carpintero
+Aves,Falconiformes,Falconidae,Halcón,halcón peregrino
+Aves,Psittaciformes,Strigopidae,Loro/guacamayo,N/A
+Aves,Psittaciformes,Cacatuidae,Loro/guacamayo,N/A
+Aves,Psittaciformes,Psittaculidae,Loro/guacamayo,N/A
+Aves,Psittaciformes,Psittacidae,Loro/guacamayo,guacamayo
+Aves,Passeriformes,Acanthisittidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Pittidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Eurylaimidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Philepittidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Sapayoidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Thamnophilidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Melanopareiidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Conopophagidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Grallariidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Rhinocryptidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Formicariidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Furnariidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Dendrocolaptidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Tyrannidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Cotingidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Pipridae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Onychorhynchidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Tityridae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Menuridae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Ptilonorhynchidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Climacteridae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Maluridae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Meliphagidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Dasyornithidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Pardalotidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Acanthizidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Pomatostomidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Orthonychidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Psophodidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Platysteiridae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Vangidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Malaconotidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Machaerirhynchidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Artamidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Aegithinidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Cracticidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Campephagidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Pachycephalidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Oriolidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Rhipiduridae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Dicruridae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Monarchidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Corvidae,Ave paseriforme (percher),cuervo común
+Aves,Passeriformes,Corcoracidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Paradisaeidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Laniidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Vireonidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Callaeidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Notiomystidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Picathartidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Bombycillidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Ptiliogonatidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Dulidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Paridae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Remizidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Stenostiridae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Alaudidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Cisticolidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Locustellidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Acrocephalidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Hirundinidae,Ave paseriforme (percher),golondrina común
+Aves,Passeriformes,Pycnonotidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Phylloscopidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Cettiidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Aegithalidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Sylviidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Zosteropidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Timaliidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Pellorneidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Leiothrichidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Regulidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Muscicapidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Turdidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Buphagidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Sturnidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Mimidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Cinclidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Passeridae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Ploceidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Estrildidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Viduidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Prunellidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Motacillidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Fringillidae,Ave paseriforme (percher),pinzón vulgar
+Aves,Passeriformes,Calcariidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Icteridae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Parulidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Emberizidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Passerellidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Cardinalidae,Ave paseriforme (percher),N/A
+Aves,Passeriformes,Thraupidae,Ave paseriforme (percher),N/A
+Reptiles,Testudines,Chelydridae,Tortuga (caparazón),N/A
+Reptiles,Testudines,Emydidae,Tortuga (caparazón),N/A
+Reptiles,Testudines,Testudinidae,Tortuga (caparazón),tortuga gigante de Galápagos
+Reptiles,Testudines,Geoemydidae,Tortuga (caparazón),N/A
+Reptiles,Testudines,Platysternidae,Tortuga (caparazón),N/A
+Reptiles,Testudines,Kinosternidae,Tortuga (caparazón),N/A
+Reptiles,Testudines,Dermatemydidae,Tortuga (caparazón),N/A
+Reptiles,Testudines,Carettochelyidae,Tortuga (caparazón),N/A
+Reptiles,Testudines,Trionychidae,Tortuga (caparazón),N/A
+Reptiles,Testudines,Cheloniidae,Tortuga (caparazón),N/A
+Reptiles,Testudines,Dermochelyidae,Tortuga (caparazón),N/A
+Reptiles,Testudines,Chelidae,Tortuga (caparazón),N/A
+Reptiles,Testudines,Pelomedusidae,Tortuga (caparazón),N/A
+Reptiles,Testudines,Podocnemididae,Tortuga (caparazón),N/A
+Reptiles,Crocodylia,Alligatoridae,Cocodrilo/caimán,N/A
+Reptiles,Crocodylia,Crocodylidae,Cocodrilo/caimán,cocodrilo del Nilo
+Reptiles,Crocodylia,Gavialidae,Cocodrilo/caimán,N/A
+Reptiles,Rhynchocephalia,Sphenodontidae,Tuátara (reptil primitivo),N/A
+Reptiles,Squamata,Gekkonidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Eublepharidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Carphodactylidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Diplodactylidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Sphaerodactylidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Phyllodactylidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Pygopodidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Dibamidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Scincidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Cordylidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Gerrhosauridae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Xantusiidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Lacertidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Teiidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Gymnophthalmidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Amphisbaenidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Bipedidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Blanidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Trogonophidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Rhineuridae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Anniellidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Anguidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Diploglossidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Helodermatidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Varanidae,Lagarto/serpiente,dragón de Komodo
+Reptiles,Squamata,Lanthanotidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Xenosauridae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Shinisauridae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Iguanidae,Lagarto/serpiente,iguana verde
+Reptiles,Squamata,Corytophanidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Crotaphytidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Hoplocercidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Opluridae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Phrynosomatidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Polychrotidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Tropiduridae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Leiosauridae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Liolaemidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Dactyloidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Chamaeleonidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Agamidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Leiocephalidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Typhlopidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Anomalepididae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Leptotyphlopidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Gerrhopilidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Aniliidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Cylindrophiidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Uropeltidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Xenopeltidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Loxocemidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Pythonidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Boidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Bolyeriidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Calabariidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Tropidophiidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Ungaliophiidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Acrochordidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Xenodermidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Pareidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Viperidae,Lagarto/serpiente,víbora de Gabón
+Reptiles,Squamata,Homalopsidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Colubridae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Elapidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Lamprophiidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Natricidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Psammophiidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Pseudoxyrhophiidae,Lagarto/serpiente,N/A
+Reptiles,Squamata,Dipsadidae,Lagarto/serpiente,N/A
+Anfibios,Anura,Bombinatoridae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Alytidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Discoglossidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Pipidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Rhinophrynidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Scaphiopodidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Pelodytidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Pelobatidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Megophryidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Heleophrynidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Nasikabatrachidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Sooglossidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Calyptocephalellidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Myobatrachidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Limnodynastidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Brachycephalidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Eleutherodactylidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Craugastoridae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Batrachylidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Bufonidae,Rana/sapo (sin cola),sapo común
+Anfibios,Anura,Odontophrynidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Cycloramphidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Alsodidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Hylodidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Ceratophryidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Telmatobiidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Rhinodermatidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Leptodactylidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Centrolenidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Hemiphractidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Hylidae,Rana/sapo (sin cola),rana arborícola
+Anfibios,Anura,Ranixalidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Dicroglossidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Nyctibatrachidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Micrixalidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Phrynobatrachidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Ptychadenidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Pyxicephalidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Ceratobatrachidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Conrauidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Petropedetidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Mantellidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Rhacophoridae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Ranidae,Rana/sapo (sin cola),rana verde
+Anfibios,Anura,Arthroleptidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Hyperoliidae,Rana/sapo (sin cola),N/A
+Anfibios,Anura,Microhylidae,Rana/sapo (sin cola),N/A
+Anfibios,Caudata,Sirenidae,Salamandra/tritón (con cola),N/A
+Anfibios,Caudata,Cryptobranchidae,Salamandra/tritón (con cola),N/A
+Anfibios,Caudata,Hynobiidae,Salamandra/tritón (con cola),N/A
+Anfibios,Caudata,Proteidae,Salamandra/tritón (con cola),N/A
+Anfibios,Caudata,Salamandridae,Salamandra/tritón (con cola),salamandra común
+Anfibios,Caudata,Ambystomatidae,Salamandra/tritón (con cola),ajolote
+Anfibios,Caudata,Dicamptodontidae,Salamandra/tritón (con cola),N/A
+Anfibios,Caudata,Amphiumidae,Salamandra/tritón (con cola),N/A
+Anfibios,Caudata,Plethodontidae,Salamandra/tritón (con cola),N/A
+Anfibios,Caudata,Rhyacotritonidae,Salamandra/tritón (con cola),N/A
+Anfibios,Gymnophiona,Rhinatrematidae,Cecilia (sin patas),N/A
+Anfibios,Gymnophiona,Ichthyophiidae,Cecilia (sin patas),N/A
+Anfibios,Gymnophiona,Herpelidae,Cecilia (sin patas),N/A
+Anfibios,Gymnophiona,Scolecomorphidae,Cecilia (sin patas),N/A
+Anfibios,Gymnophiona,Chikilidae,Cecilia (sin patas),N/A
+Anfibios,Gymnophiona,Indotyphlidae,Cecilia (sin patas),N/A
+Anfibios,Gymnophiona,Grandisoniidae,Cecilia (sin patas),N/A
+Anfibios,Gymnophiona,Siphonopidae,Cecilia (sin patas),N/A
+Anfibios,Gymnophiona,Dermophiidae,Cecilia (sin patas),N/A
+Anfibios,Gymnophiona,Typhlonectidae,Cecilia (sin patas),N/A
+Anfibios,Gymnophiona,Caeciliidae,Cecilia (sin patas),N/A
+Peces cartilaginosos,Heterodontiformes,N/A,Tiburón de dientes mixtos,N/A
+Peces cartilaginosos,Orectolobiformes,N/A,Tiburón alfombra,N/A
+Peces cartilaginosos,Lamniformes,N/A,Tiburón macrodonte,N/A
+Peces cartilaginosos,Carcharhiniformes,N/A,Tiburón típico,N/A
+Peces cartilaginosos,Hexanchiformes,N/A,Tiburón primitivo branquias múltiples,N/A
+Peces cartilaginosos,Squaliformes,N/A,Tiburón espinoso,N/A
+Peces cartilaginosos,Squatiniformes,N/A,Tiburón ángel (aplanado),N/A
+Peces cartilaginosos,Pristiophoriformes,N/A,Tiburón sierra,N/A
+Peces cartilaginosos,Echinorhiniformes,N/A,Tiburón de espinas,N/A
+Peces cartilaginosos,Pristiformes,N/A,Pez sierra,N/A
+Peces cartilaginosos,Rhinopristiformes,N/A,Raya guitarra,N/A
+Peces cartilaginosos,Torpediniformes,N/A,Raya eléctrica,N/A
+Peces cartilaginosos,Rajiformes,N/A,Raya de aletas en forma de rombo,N/A
+Peces cartilaginosos,Myliobatiformes,N/A,Raya látigo,N/A
+Peces cartilaginosos,Chimaeriformes,N/A,Quimera (cartilaginoso de hocico raro),N/A
+Peces óseos,Polypteriformes,N/A,Pez de aletas en penacho,N/A
+Peces óseos,Acipenseriformes,N/A,Esturión,N/A
+Peces óseos,Lepisosteiformes,N/A,Pejelagarto,N/A
+Peces óseos,Amiiformes,N/A,Pez bowfin,N/A
+Peces óseos,Hiodontiformes,N/A,Pez luna de agua dulce,N/A
+Peces óseos,Osteoglossiformes,N/A,Pez lengua de hueso,N/A
+Peces óseos,Elopiformes,N/A,Tarpón,N/A
+Peces óseos,Albuliformes,N/A,Pez hueso,N/A
+Peces óseos,Anguilliformes,N/A,Anguila,N/A
+Peces óseos,Clupeiformes,N/A,Sardina/arenque,N/A
+Peces óseos,Gonorynchiformes,N/A,Pez ratón de milkfish,N/A
+Peces óseos,Cypriniformes,N/A,Carpa/pez cebra,N/A
+Peces óseos,Characiformes,N/A,Piraña/tetra,N/A
+Peces óseos,Gymnotiformes,N/A,Pez cuchillo eléctrico,N/A
+Peces óseos,Siluriformes,N/A,Bagre/pez gato,N/A
+Peces óseos,Argentiniformes,N/A,Pez plateado de profundidad,N/A
+Peces óseos,Esociformes,N/A,Lucio,N/A
+Peces óseos,Salmoniformes,N/A,Salmón/trucha,N/A
+Peces óseos,Osmeriformes,N/A,Eperlano,N/A
+Peces óseos,Stomiiformes,N/A,Pez linterna de profundidad,N/A
+Peces óseos,Aulopiformes,N/A,Pez lagarto,N/A
+Peces óseos,Myctophiformes,N/A,Pez linterna,N/A
+Peces óseos,Lampriformes,N/A,Pez remo,N/A
+Peces óseos,Percopsiformes,N/A,Pez trucha-percha,N/A
+Peces óseos,Zeiformes,N/A,Pez de San Pedro,N/A
+Peces óseos,Gadiformes,N/A,Bacalao,N/A
+Peces óseos,Ophidiiformes,N/A,Pez anguila cusk,N/A
+Peces óseos,Batrachoidiformes,N/A,Pez sapo,N/A
+Peces óseos,Lophiiformes,N/A,Rape,N/A
+Peces óseos,Mugiliformes,N/A,Lisa/mújol,N/A
+Peces óseos,Atheriniformes,N/A,Pejerrey,N/A
+Peces óseos,Beloniformes,N/A,Pez aguja/agujeta,N/A
+Peces óseos,Cyprinodontiformes,N/A,Pez killi/guppy,N/A
+Peces óseos,Synbranchiformes,N/A,Anguila de pantano,N/A
+Peces óseos,Scorpaeniformes,N/A,Pez escorpión/rascacio,N/A
+Peces óseos,Perciformes,N/A,Pez percoide (grupo muy diverso),N/A
+Peces óseos,Pleuronectiformes,N/A,Lenguado/rodaballo,N/A
+Peces óseos,Tetraodontiformes,N/A,Pez globo,N/A
+Peces óseos,Gasterosteiformes,N/A,Espinoso,N/A
+Peces óseos,Syngnathiformes,N/A,Caballito de mar,N/A
+Peces óseos,Beryciformes,N/A,Pez ardilla,N/A
+Peces óseos (sarcopterigios),Coelacanthiformes,N/A,Celacanto (fósil viviente),N/A
+Peces óseos (sarcopterigios),Ceratodontiformes,N/A,Pez pulmonado,N/A
+Insectos,Archaeognatha,N/A,Insecto primitivo saltador,N/A
+Insectos,Zygentoma,N/A,Pececillo de plata,N/A
+Insectos,Ephemeroptera,N/A,Efímera de vida corta,N/A
+Insectos,Odonata,N/A,Libélula/caballito del diablo,N/A
+Insectos,Plecoptera,N/A,Mosca de las piedras,N/A
+Insectos,Notoptera,N/A,Grilo-cucaracha de hielo,N/A
+Insectos,Dermaptera,N/A,Tijereta,N/A
+Insectos,Embioptera,N/A,Insecto tejedor de seda,N/A
+Insectos,Orthoptera,N/A,Saltamontes/grillo,N/A
+Insectos,Phasmatodea,N/A,Insecto palo,N/A
+Insectos,Mantodea,N/A,Mantis religiosa,N/A
+Insectos,Blattodea,N/A,Cucaracha/termita,N/A
+Insectos,Psocodea,N/A,Piojo/psócido,N/A
+Insectos,Thysanoptera,N/A,Trips,N/A
+Insectos,Hemiptera,N/A,Chinche/cigarra,N/A
+Insectos,Coleoptera,N/A,Escarabajo,escarabajo rinoceronte
+Insectos,Strepsiptera,N/A,Insecto parásito retorcido,N/A
+Insectos,Neuroptera,N/A,Crisopa,N/A
+Insectos,Megaloptera,N/A,Mosca dobsón,N/A
+Insectos,Raphidioptera,N/A,Mosca serpiente,N/A
+Insectos,Hymenoptera,N/A,Abeja/avispa/hormiga,abeja europea
+Insectos,Trichoptera,N/A,Tricóptero (larva acuática),N/A
+Insectos,Lepidoptera,N/A,Mariposa/polilla,N/A
+Insectos,Diptera,N/A,Mosca/mosquito,mosca doméstica
+Insectos,Siphonaptera,N/A,Pulga,N/A
+Insectos,Mecoptera,N/A,Mosca escorpión,N/A
+Arácnidos,Araneae,N/A,Araña,N/A
+Arácnidos,Scorpiones,N/A,Escorpión,N/A
+Arácnidos,Opiliones,N/A,Segador/opilión,N/A
+Arácnidos,Acari,N/A,Ácaro/garrapata,N/A
+Arácnidos,Pseudoscorpiones,N/A,Falso escorpión,N/A
+Arácnidos,Solifugae,N/A,Solífugo (araña camello),N/A
+Arácnidos,Amblypygi,N/A,Amblipigio,N/A
+Arácnidos,Uropygi,N/A,Vinagrillo (escorpión látigo),N/A
+Arácnidos,Schizomida,N/A,Esquizómido,N/A
+Arácnidos,Ricinulei,N/A,Ricinúlido,N/A
+Arácnidos,Palpigradi,N/A,Palpígrado,N/A
+Crustáceos,Decapoda,N/A,Cangrejo/langosta/camarón,N/A
+Crustáceos,Amphipoda,N/A,Anfípodo,N/A
+Crustáceos,Isopoda,N/A,Isópodo (bicho bolita),N/A
+Crustáceos,Copepoda,N/A,Copépodo,N/A
+Crustáceos,Cirripedia,N/A,Percebe/bellota de mar,N/A
+Crustáceos,Euphausiacea,N/A,Kril,N/A
+Crustáceos,Stomatopoda,N/A,Camarón mantis,N/A
+Crustáceos,Anostraca,N/A,Artemia,N/A
+Crustáceos,Cladocera,N/A,Pulga de agua,N/A
+Crustáceos,Ostracoda,N/A,Ostrácodo,N/A
+Miriápodos (ciempiés),Scutigeromorpha,N/A,Ciempiés de patas largas,N/A
+Miriápodos (ciempiés),Lithobiomorpha,N/A,Ciempiés de piedra,N/A
+Miriápodos (ciempiés),Scolopendromorpha,N/A,Ciempiés grande venenoso,N/A
+Miriápodos (ciempiés),Geophilomorpha,N/A,Ciempiés subterráneo,N/A
+Miriápodos (milpiés),Polydesmida,N/A,Milpiés aplanado,N/A
+Miriápodos (milpiés),Julida,N/A,Milpiés cilíndrico,N/A
+Miriápodos (milpiés),Spirobolida,N/A,Milpiés grande enrollable,N/A
+Miriápodos (milpiés),Spirostreptida,N/A,Milpiés africano,N/A
+Miriápodos (milpiés),Glomerida,N/A,Milpiés bola,N/A
+Miriápodos (milpiés),Polyzoniida,N/A,Milpiés en forma de cinta,N/A
+Miriápodos (milpiés),Chordeumatida,N/A,Milpiés de bosque,N/A
+Miriápodos,Pauropoda,N/A,Paurópodo (microscópico),N/A
+Miriápodos,Symphyla,N/A,Sínfilo (microscópico),N/A
+Moluscos,Gastropoda,N/A,Caracol/babosa,N/A
+Moluscos,Bivalvia,N/A,Almeja/mejillón,N/A
+Moluscos,Octopoda,N/A,Pulpo,N/A
+Moluscos,Teuthida,N/A,Calamar,N/A
+Moluscos,Sepiida,N/A,Sepia,N/A
+Moluscos,Nautilida,N/A,Nautilo,N/A
+Moluscos,Polyplacophora,N/A,Quitón,N/A
+Moluscos,Scaphopoda,N/A,Colmillo de mar (concha tubular),N/A
+Anélidos,Oligochaeta,N/A,Lombriz de tierra,N/A
+Anélidos,Hirudinea,N/A,Sanguijuela,N/A
+Anélidos,Polychaeta,N/A,Gusano marino con cerdas,N/A
+Equinodermos,Asteroidea,N/A,Estrella de mar,N/A
+Equinodermos,Ophiuroidea,N/A,Estrella quebradiza,N/A
+Equinodermos,Echinoidea,N/A,Erizo de mar,N/A
+Equinodermos,Holothuroidea,N/A,Pepino de mar,N/A
+Equinodermos,Crinoidea,N/A,Lirio de mar,N/A
+Cnidarios,Anthozoa,N/A,Coral/anémona,N/A
+Cnidarios,Scyphozoa,N/A,Medusa verdadera,N/A
+Cnidarios,Hydrozoa,N/A,Hidrozoo colonial,N/A
+Cnidarios,Cubozoa,N/A,Avispa de mar,N/A

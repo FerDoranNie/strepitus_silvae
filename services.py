@@ -23,9 +23,10 @@ SCHEMA = {
         "scientificName": {"type": "string"}, "vernacularName": {"type": "string"},
         "individualCount": {"type": "integer", "minimum": 0}, "behavior": {"type": "string"},
         "organismRemarks": {"type": "string"}, "identificationConfidence": {"type": "string", "enum": ["alto", "medio", "bajo"]},
+        "identificationProbability": {"type": "integer", "minimum": 0, "maximum": 100},
         "alertaHumanaOVehiculo": {"type": "boolean"},
     },
-    "required": ["scientificName", "vernacularName", "individualCount", "behavior", "organismRemarks", "identificationConfidence", "alertaHumanaOVehiculo"],
+    "required": ["scientificName", "vernacularName", "individualCount", "behavior", "organismRemarks", "identificationConfidence", "identificationProbability", "alertaHumanaOVehiculo"],
 }
 
 VIDEO_MULTI_SCHEMA = {
@@ -45,6 +46,7 @@ VIDEO_MULTI_SCHEMA = {
 INSTRUCTIONS = """Eres un biólogo especialista en conservación en América Latina. Extrae una observación de fauna.
 No inventes especies: si no es identificable, usa el taxón más conservador posible y confianza bajo.
 scientificName debe ser nombre científico, o cadena vacía si no puede inferirse. vernacularName puede ser cadena vacía.
+identificationProbability debe ser un entero conservador de 0 a 100 que estime la probabilidad de que el taxón propuesto sea correcto según la evidencia. No es una probabilidad calibrada ni una confirmación científica. Debe concordar con identificationConfidence.
 organismRemarks debe describir condición física visible o decir que no es evaluable. La respuesta debe cumplir el esquema."""
 
 
@@ -77,6 +79,13 @@ def _enrich(record: dict[str, Any], context: dict[str, Any]) -> dict[str, Any]:
     record.update({key: value for key, value in context.items() if value is not None})
     record["basisOfRecord"] = "MachineObservation"
     record["identifiedBy"] = "Strepitus Silvae (AI-assisted; human review required)"
+    # BirdNET and historical saved records may only contain a categorical
+    # confidence. Preserve them with a conservative display estimate rather
+    # than making validation fail; new GPT responses provide their own value.
+    if record.get("identificationProbability") is None:
+        record["identificationProbability"] = {"alto": 80, "medio": 55, "bajo": 25}.get(
+            record.get("identificationConfidence"), 25
+        )
     if record["identificationConfidence"] in {"medio", "bajo"}:
         record["validacionExterna"] = validate_taxon(record["scientificName"] or record["vernacularName"])
     return FieldObservation.model_validate(record).model_dump(mode="json")

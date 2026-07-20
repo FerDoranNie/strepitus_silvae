@@ -14,7 +14,11 @@
 - Transcribe notas de campo y las transforma al mismo registro estructurado.
 - Identifica vocalizaciones de aves con BirdNET (beta) y analiza videos de cámara trampa mediante fotogramas.
 - Permite seleccionar un punto en un mapa y consultar especies observadas cerca mediante iNaturalist y GBIF; es contexto comunitario, no presencia confirmada.
-- Genera un perfil ambiental ligero con elevación, relieve local y edificios/vías mapeados en OpenStreetMap. Incluye una clasificación climática Köppen aproximada a partir de normales 1991–2020, una inferencia de vegetación potencial y una capa opcional de cobertura terrestre ESA WorldCover 2021; ninguna de ellas confirma vegetación local a escala de sitio.
+- Genera un perfil ambiental ligero con elevación, relieve local y edificios/vías mapeados en OpenStreetMap. Incluye una clasificación climática Köppen aproximada a partir de normales 1991–2020, una inferencia de vegetación potencial, una capa opcional de cobertura terrestre ESA WorldCover 2021 y un mapa local 2D; ninguna de ellas confirma vegetación local a escala de sitio.
+- Resume registros GBIF georreferenciados cercanos de los últimos cinco años, incluyendo especies, fecha reciente y los registros que declaran `individualCount`. Es contexto histórico, no una estimación poblacional ni presencia actual.
+- Incluye un Explorador Wiki de especies con imagen y resumen de Wikipedia, enlaces públicos y el estado de conservación registrado en Wikidata cuando exista.
+- Puede generar bajo demanda una ilustración de hábitat con GPT Image; se etiqueta explícitamente como contenido generado por IA y no como evidencia observacional.
+- Incluye demos locales seleccionables para la presentación. Cada una carga su evidencia, coordenadas y cita desde `samples/samples_for_demo/samples_directory.csv`; los créditos se muestran antes de usarla.
 - Cuando la confianza es `medio` o `bajo`, realiza una validación taxonómica condicional mediante iNaturalist.
 - Valida cada resultado con Pydantic y permite descargar JSON o CSV alineado con Darwin Core.
 
@@ -23,7 +27,7 @@
 1. **Vision-Ecologist:** GPT-5.6 analiza fotos de cámaras trampa.
 2. **Audio-Structurer:** transcripción de OpenAI seguida de GPT-5.6 estructura la nota de voz.
 3. **Taxonomic Validator:** iNaturalist verifica de forma condicional identificaciones inciertas.
-4. **Contexto ecológico:** un mapa seleccionable, iNaturalist, GBIF y un perfil de terreno/infraestructura presentan contexto sin alterar la identificación basada en evidencia.
+4. **Contexto ecológico:** un mapa seleccionable, iNaturalist, GBIF, un perfil ambiental 2D y un explorador de especies presentan contexto sin alterar la identificación basada en evidencia.
 5. **Validación y exportación:** Pydantic protege el esquema de salida; la interfaz exporta JSON y CSV.
 
 La interfaz permite elegir GPT-5.6 Sol (máxima capacidad), Terra (equilibrio) o Luna (alto volumen y menor costo).
@@ -53,7 +57,11 @@ Cada resultado es una hipótesis asistida por IA. Personal capacitado debe revis
 - Transcribes field notes and maps them to the same structured observation record.
 - Identifies bird vocalizations with BirdNET (beta) and analyzes camera-trap video through sampled frames.
 - Lets users select a map point and query nearby observed species through iNaturalist and GBIF; this is community context, not confirmed presence.
-- Produces a lightweight environmental profile with elevation, local relief, and OpenStreetMap-mapped buildings and roads. It includes an approximate Köppen climate classification from 1991–2020 normals, inferred potential vegetation, and an optional ESA WorldCover 2021 land-cover layer; none confirms site-scale local vegetation.
+- Produces a lightweight environmental profile with elevation, local relief, and OpenStreetMap-mapped buildings and roads. It includes an approximate Köppen climate classification from 1991–2020 normals, inferred potential vegetation, an optional ESA WorldCover 2021 land-cover layer, and a local 2D map; none confirms site-scale local vegetation.
+- Summarizes nearby georeferenced GBIF records from the past five years, including taxa, most recent date, and records that declare `individualCount`. This is historical context, not a population estimate or current-presence claim.
+- Includes a Species Wiki Explorer with a Wikipedia image and summary, public links, and Wikidata-recorded conservation status when available.
+- Can generate an on-demand habitat illustration with GPT Image; it is explicitly labeled as AI-generated content, not observational evidence.
+- Includes selectable local demos for the presentation. Each loads its evidence, coordinates, and citation from `samples/samples_for_demo/samples_directory.csv`; the credit is shown before it is used.
 - When confidence is `medio` or `bajo`, conditionally cross-checks the taxon through iNaturalist.
 - Validates each result with Pydantic and exports Darwin Core-aligned JSON or CSV.
 
@@ -62,7 +70,7 @@ Cada resultado es una hipótesis asistida por IA. Personal capacitado debe revis
 1. **Vision-Ecologist:** GPT-5.6 analyzes camera-trap images.
 2. **Audio-Structurer:** OpenAI transcription followed by GPT-5.6 structures the spoken note.
 3. **Taxonomic Validator:** iNaturalist conditionally checks uncertain identifications.
-4. **Ecological context:** a selectable map, iNaturalist, GBIF, and terrain/infrastructure profile provide context without changing evidence-based identification.
+4. **Ecological context:** a selectable map, iNaturalist, GBIF, a 2D environmental profile, and species explorer provide context without changing evidence-based identification.
 5. **Validation and export:** Pydantic protects the output schema; the interface exports JSON and CSV.
 
 The interface lets users choose GPT-5.6 Sol (highest capability), Terra (balanced), or Luna (cost-sensitive high volume).

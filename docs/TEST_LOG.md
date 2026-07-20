@@ -16,11 +16,15 @@
 | Habitat profile | Open-Meteo + OSM/Overpass at 19.4326, -99.1332; 1 km | Elevation, local relief, OSM building count and road-layer sample. | Returned 2,230 m elevation, 13 m local relief, 3,249 mapped buildings and a visible road sample. | Pass; OSM completeness varies by location |
 | Map and links UX | Existing Streamlit session result followed by map/context rendering | Immediate point feedback and visible external links for every potential species. | Map uses a client-side click marker plus a controlled rerun; a regression test confirmed GBIF and Wikipedia links are backfilled and rendered for prior session rows. | Pass |
 | Climate and vegetation context | Open-Meteo historical normals at 20.2114, -87.4654 | Köppen approximation plus a clearly separated potential-vegetation label. | Returned `Aw` (tropical with dry season) and “Sabana y bosque tropical estacional”; ESA WorldCover 2021 is available as an optional map layer. | Pass; climatic inference is not site-scale vegetation confirmation |
+| Species reference context | *Aythya affinis* / Lesser Scaup | Wikipedia summary, Wikidata taxon rank and IUCN reference when available. | MediaWiki Action API returned an extract and thumbnail; Wikidata returned rank `especie`, IUCN-linked status “especie bajo preocupación menor”, and IUCN ID `22680402`. | Pass; verify the current IUCN assessment before conservation use |
+| GBIF environmental summary | Simulated recent, georeferenced bird records within profile radius | Counts must remain occurrence-context metrics, not population estimates. | Unit test returned 3 records, 2 taxa, 2 records with explicit `individualCount`, and a reported-count sum of 5; the UI labels this distinction. | Pass; perform live per-location check before demo |
 
 ## Remaining manual tests
 
 - Public app interface: complete each flow from Streamlit, including JSON and CSV downloads.
 - Map interaction: select a point and confirm that coordinates are populated before querying nearby species.
+- Environmental profile: refresh a real selected point and confirm its GBIF occurrence summary, map layers, and explicit-count wording.
+- Species Wiki Explorer: confirm the conservation status appears above the reference image and that each external reference link opens correctly.
 - Review every medium-confidence result and confirm any image/video source licence and attribution before publishing it.
 
 ## Rule for prompt changes

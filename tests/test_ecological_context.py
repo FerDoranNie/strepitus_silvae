@@ -1,6 +1,6 @@
 import unittest
 
-from ecological_context import ICONIC_TAXA, aggregate_gbif_records, radius_polygon_wkt, species_row
+from ecological_context import ICONIC_TAXA, aggregate_gbif_records, radius_polygon_wkt, species_row, summarize_gbif_nearby_records
 
 
 class EcologicalContextTests(unittest.TestCase):
@@ -53,3 +53,18 @@ class EcologicalContextTests(unittest.TestCase):
         polygon = radius_polygon_wkt(19.4326, -99.1332, 5, points=4)
         self.assertTrue(polygon.startswith("POLYGON(("))
         self.assertTrue(polygon.endswith("))"))
+
+    def test_gbif_nearby_summary_keeps_counts_separate_from_population(self):
+        summary = summarize_gbif_nearby_records(
+            [
+                {"species": "Dives dives", "class": "Aves", "eventDate": "2025-05-02", "individualCount": "3"},
+                {"species": "Dives dives", "class": "Aves", "eventDate": "2024-01-01"},
+                {"species": "Aythya affinis", "class": "Aves", "eventDate": "2025-06-01", "individualCount": "2"},
+            ],
+            "Aves",
+        )
+        self.assertEqual(summary["record_count"], 3)
+        self.assertEqual(summary["species_count"], 2)
+        self.assertEqual(summary["records_with_individual_count"], 2)
+        self.assertEqual(summary["reported_individuals"], 5)
+        self.assertEqual(summary["latest_event_date"], "2025-06-01")

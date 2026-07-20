@@ -101,6 +101,64 @@ def gbif_potential_species(
     return aggregate_gbif_records(response.get("results", []), group, limit)
 
 
+def gbif_nearby_summary(
+    latitude: float,
+    longitude: float,
+    radius_km: int = 1,
+    group: str = "Todos",
+) -> dict[str, Any]:
+    """Summarize recent GBIF occurrences without treating them as a population estimate."""
+    if group not in GBIF_CLASSES:
+        raise ValueError(f"Grupo no compatible: {group}")
+    response = occurrences.search(
+        geometry=radius_polygon_wkt(latitude, longitude, radius_km),
+        year=f"{date.today().year - 5},{date.today().year}",
+        hasCoordinate=True,
+        hasGeospatialIssue=False,
+        limit=300,
+        timeout=20,
+    )
+    return summarize_gbif_nearby_records(response.get("results", []), group, response.get("endOfRecords", True))
+
+
+def summarize_gbif_nearby_records(
+    records: list[dict[str, Any]], group: str, end_of_records: bool = True
+) -> dict[str, Any]:
+    """Build UI-safe metrics from an occurrence sample and preserve their meaning."""
+    expected_class = GBIF_CLASSES[group]
+    filtered = [record for record in records if not expected_class or record.get("class") == expected_class]
+    species: dict[str, int] = {}
+    event_dates: list[str] = []
+    records_with_count = 0
+    reported_individuals = 0.0
+    for record in filtered:
+        scientific_name = record.get("species") or record.get("scientificName")
+        if scientific_name:
+            species[scientific_name] = species.get(scientific_name, 0) + 1
+        event_date = record.get("eventDate")
+        if isinstance(event_date, str) and event_date:
+            event_dates.append(event_date)
+        try:
+            individual_count = float(record.get("individualCount"))
+        except (TypeError, ValueError):
+            continue
+        if individual_count > 0:
+            records_with_count += 1
+            reported_individuals += individual_count
+    return {
+        "record_count": len(filtered),
+        "species_count": len(species),
+        "latest_event_date": max(event_dates) if event_dates else None,
+        "records_with_individual_count": records_with_count,
+        "reported_individuals": round(reported_individuals) if reported_individuals.is_integer() else round(reported_individuals, 1),
+        "sample_complete": bool(end_of_records),
+        "top_species": [
+            {"Especie": name, "Registros": count, "GBIF": gbif_species_url(None, name)}
+            for name, count in sorted(species.items(), key=lambda item: item[1], reverse=True)[:8]
+        ],
+    }
+
+
 def radius_polygon_wkt(latitude: float, longitude: float, radius_km: int, points: int = 24) -> str:
     """Create a small WKT search polygon around a point for the GBIF API."""
     latitude_delta = radius_km / 111.32

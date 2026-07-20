@@ -82,6 +82,7 @@ def analyze_bird_vocalization(data: bytes, filename: str, suffix: str | None = N
         "behavior": "vocalizando",
         "organismRemarks": "Identificación bioacústica preliminar mediante BirdNET; requiere revisión humana.",
         "identificationConfidence": confidence_level,
+        "identificationProbability": round(primary["confidence"] * 100),
         "alertaHumanaOVehiculo": False,
         "bioacousticCandidates": candidates,
     }

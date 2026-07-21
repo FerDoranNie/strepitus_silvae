@@ -64,6 +64,72 @@ def inject_mobile_web_metadata() -> None:
     MOBILE_WEB_METADATA_COMPONENT(key="mobile_web_metadata")
 
 
+def inject_responsive_styles() -> None:
+    """Keep the field workflow legible and touch-friendly on narrow screens."""
+    st.html(
+        """
+        <style>
+          .demo-callout {
+            background: linear-gradient(135deg, #E7F1D8 0%, #F8E9D2 100%);
+            border: 1px solid #B8D38E;
+            border-left: 6px solid #3B6D11;
+            border-radius: 14px;
+            padding: 1rem 1.1rem;
+            margin: 0.25rem 0 0.75rem;
+          }
+          .demo-callout__eyebrow {
+            color: #2F570E;
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.25rem;
+          }
+          .demo-callout h3 {
+            color: #244908;
+            font-size: 1.12rem;
+            margin: 0;
+          }
+          .demo-callout p {
+            color: #3C4335;
+            margin: 0.35rem 0 0;
+          }
+          @media (max-width: 700px) {
+            .stMainBlockContainer {
+              padding-left: 0.85rem;
+              padding-right: 0.85rem;
+              padding-bottom: 2.5rem;
+            }
+            [data-testid="stHorizontalBlock"] {
+              flex-direction: column;
+              gap: 0.75rem;
+            }
+            [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] {
+              width: 100% !important;
+              flex: 1 1 100% !important;
+            }
+            [data-testid="stTabs"] [data-baseweb="tab-list"] {
+              gap: 0.2rem;
+              overflow-x: auto;
+              scrollbar-width: none;
+            }
+            [data-testid="stTabs"] [data-baseweb="tab-list"]::-webkit-scrollbar {
+              display: none;
+            }
+            [data-testid="stTabs"] [data-baseweb="tab"] {
+              flex: 0 0 auto;
+              font-size: 0.84rem;
+              padding: 0.55rem 0.65rem;
+              white-space: nowrap;
+            }
+            [data-testid="stAlert"] {
+              font-size: 0.9rem;
+            }
+          }
+        </style>
+        """
+    )
+
+
 @st.dialog("Tutorial / Tutorial", width="large", icon=":material/menu_book:")
 def show_tutorial() -> None:
     """Open a short bilingual onboarding guide without leaving the analysis flow."""
@@ -369,7 +435,13 @@ def render_location_context() -> tuple[date, float | None, float | None, str]:
                 ).add_to(field_map)
             folium.LayerControl().add_to(field_map)
 
-    map_data = st_folium(field_map, key="event_location_map", height=320, width=700, returned_objects=["last_clicked"])
+    map_data = st_folium(
+        field_map,
+        key="event_location_map",
+        height=320,
+        returned_objects=["last_clicked"],
+        use_container_width=True,
+    )
     clicked_point = map_data.get("last_clicked") if map_data else None
     if clicked_point:
         clicked_latitude = clicked_point.get("lat")
@@ -844,16 +916,18 @@ st.set_page_config(
 )
 st.logo("logos_e_imagenes/strepitus_silvae_logo_svg.svg", size="large")
 inject_mobile_web_metadata()
+inject_responsive_styles()
 
 st.title("Strepitus Silvae")
 st.caption(t("Copiloto de campo para transformar evidencia de fauna en registros Darwin Core verificables.", "Field copilot that transforms wildlife evidence into reviewable Darwin Core records."))
 st.warning(
     t(
-        "Aviso para jueces: esta demo pública opera con un presupuesto personal limitado para la API de OpenAI. Si los créditos se agotan, consulta las demos acreditadas y el repositorio; la aplicación puede ejecutarse localmente con una clave configurada.",
-        "Judge note: this public demo runs on a limited personal OpenAI API budget. If credits are exhausted, review the credited demos and repository; the app can run locally with a configured key.",
+        "Aviso para jueces: esta demo usa un presupuesto personal limitado para la API. Si se agota, utiliza las demos acreditadas o ejecuta el repositorio con una clave configurada.",
+        "Judge note: this demo uses a limited personal API budget. If it is exhausted, use the credited demos or run the repository with a configured key.",
     ),
     icon="⚠️",
 )
+st.caption(t("📱 Lista para móvil: en Android, abre el menú de Chrome y elige ‘Agregar a pantalla principal’.", "📱 Mobile-ready: on Android, open Chrome's menu and choose ‘Add to Home screen’."))
 
 with st.sidebar:
     st.selectbox("Language / Idioma", ["English", "Español"], key="interface_language")
@@ -888,7 +962,15 @@ with st.sidebar:
 demo_samples = cached_demo_samples()
 active_demo: DemoSample | None = sample_by_name(demo_samples, st.session_state.get("active_demo_sample"))
 
-with st.expander(t("Demos con créditos", "Credited demos"), expanded=active_demo is not None):
+with st.container(border=True):
+    st.markdown(
+        "<div class='demo-callout'>"
+        f"<div class='demo-callout__eyebrow'>{t('LISTAS PARA JUECES', 'JUDGE-READY')}</div>"
+        f"<h3>{t('🧪 Demos acreditadas, listas para analizar', '🧪 Credited demos, ready to analyze')}</h3>"
+        f"<p>{t('Elige una muestra para cargar su archivo, tipo de evidencia, coordenadas y crédito. Después selecciona Analizar evidencia.', 'Choose a sample to load its file, evidence type, coordinates, and credit. Then select Analyze evidence.')}</p>"
+        "</div>",
+        unsafe_allow_html=True,
+    )
     if not demo_samples:
         st.info(t("No se encontraron demos locales.", "No local demos were found."))
     else:
@@ -911,7 +993,12 @@ with st.expander(t("Demos con créditos", "Credited demos"), expanded=active_dem
             st.caption(f"{t('Crédito', 'Credit')}: {selected_demo.citation}")
         demo_action, clear_action = st.columns(2)
         with demo_action:
-            use_demo = st.button(t("Usar esta demo", "Use this demo"), key="use_demo_sample", width="stretch")
+            use_demo = st.button(
+                t("Cargar demo lista", "Load ready-to-run demo"),
+                key="use_demo_sample",
+                type="primary",
+                width="stretch",
+            )
         with clear_action:
             clear_demo = st.button(t("Quitar demo", "Clear demo"), key="clear_demo_sample", disabled=active_demo is None, width="stretch")
         if use_demo and selected_demo:

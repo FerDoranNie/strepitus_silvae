@@ -22,3 +22,11 @@ class MobileWebTests(unittest.TestCase):
         self.assertIn("enableStaticServing = true", config)
         self.assertIn("mobile_web_metadata", app)
         self.assertTrue((ROOT / "components" / "mobile_web_metadata" / "index.html").is_file())
+
+    def test_mobile_styles_and_ready_to_run_demo_callout_are_present(self):
+        app = (ROOT / "app.py").read_text(encoding="utf-8")
+
+        self.assertIn("@media (max-width: 700px)", app)
+        self.assertIn("demo-callout", app)
+        self.assertIn("Load ready-to-run demo", app)
+        self.assertIn("use_container_width=True", app)

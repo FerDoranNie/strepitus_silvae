@@ -62,6 +62,24 @@ El repositorio incluye la configuración para una Space Docker (`Dockerfile` y e
 
 Cada resultado es una hipótesis asistida por IA. Personal capacitado debe revisarlo antes de usarlo en decisiones científicas, regulatorias o de conservación.
 
+### Créditos
+
+- **Fernando Dorantes Nieto** — creador del proyecto; dirección de producto y científica, curaduría de evidencias, selección de demos, pruebas y revisión final.
+- **Codex con GPT-5.6** — colaborador de desarrollo asistido por IA; apoyó el diseño técnico, la implementación, depuración, pruebas y documentación bajo la dirección de Fernando.
+- **Búho de Codex** — mascota visual que acompaña la experiencia del proyecto.
+
+### Itinerario de construcción — julio de 2026
+
+| Día | Enfoque |
+| --- | --- |
+| **Miércoles 15** | Motor auditivo y checkpoint de reglas: transcripción de notas de campo, mapeo estructurado y validación de requisitos del reto. |
+| **Jueves 16** | Estandarización y narrativa: esquema Pydantic/Darwin Core, exportación CSV y primer guion del pitch. |
+| **Viernes 17** | Interfaz analítica: tablero Streamlit, carga de evidencia, resultados revisables y señales de validación externa. |
+| **Sábado 18** | Integración end-to-end: pruebas con imágenes, audios y videos; manejo de excepciones y contexto de ubicación. |
+| **Domingo 19** | Pulido basado en pruebas: detección multiespecie en video, contexto ecológico, mapas y Explorador Wiki. La grabación se reprogramó para el lunes. |
+| **Lunes 20** | Documentación, despliegue Docker en Hugging Face, pulido responsive/PWA y **comienzo de la grabación del video**. |
+| **Martes 21** | Entrega: verificación final del repositorio, enlace funcional, video público y formulario de Devpost. |
+
 ---
 
 ## English
@@ -108,6 +126,24 @@ The repository includes a Docker Space configuration (`Dockerfile` and the YAML 
 ### Responsible use
 
 Every result is an AI-assisted hypothesis. Qualified personnel must review it before scientific, regulatory, or conservation use.
+
+### Credits
+
+- **Fernando Dorantes Nieto** — project creator; product and scientific direction, evidence curation, demo selection, testing, and final review.
+- **Codex with GPT-5.6** — AI-assisted development collaborator; supported technical design, implementation, debugging, testing, and documentation under Fernando's direction.
+- **Codex owl** — visual mascot accompanying the project experience.
+
+### Build itinerary — July 2026
+
+| Day | Focus |
+| --- | --- |
+| **Wednesday 15** | Audio engine and rules checkpoint: field-note transcription, structured mapping, and challenge-requirement review. |
+| **Thursday 16** | Standardization and narrative: Pydantic/Darwin Core schema, CSV export, and first pitch-script draft. |
+| **Friday 17** | Analytical interface: Streamlit dashboard, evidence upload, reviewable results, and external-validation signals. |
+| **Saturday 18** | End-to-end integration: image, audio, and video testing; exception handling and location context. |
+| **Sunday 19** | Test-led polish: multi-species video detection, ecological context, maps, and the Wiki Explorer. Recording was rescheduled to Monday. |
+| **Monday 20** | Documentation, Hugging Face Docker deployment, responsive/PWA polish, and **video recording begins**. |
+| **Tuesday 21** | Submission: final repository check, working link, public video, and Devpost form. |
 
 ---
 

@@ -834,6 +834,13 @@ st.logo("logos_e_imagenes/strepitus_silvae_logo_svg.svg", size="large")
 
 st.title("Strepitus Silvae")
 st.caption(t("Copiloto de campo para transformar evidencia de fauna en registros Darwin Core verificables.", "Field copilot that transforms wildlife evidence into reviewable Darwin Core records."))
+st.warning(
+    t(
+        "Aviso para jueces: esta demo pública opera con un presupuesto personal limitado para la API de OpenAI. Si los créditos se agotan, consulta las demos acreditadas y el repositorio; la aplicación puede ejecutarse localmente con una clave configurada.",
+        "Judge note: this public demo runs on a limited personal OpenAI API budget. If credits are exhausted, review the credited demos and repository; the app can run locally with a configured key.",
+    ),
+    icon="⚠️",
+)
 
 with st.sidebar:
     st.selectbox("Language / Idioma", ["English", "Español"], key="interface_language")

@@ -4,11 +4,13 @@ import json
 import os
 from datetime import date
 from html import escape
+from pathlib import Path
 from typing import Any
 
 import folium
 import streamlit as st
 from pyinaturalist import get_taxa
+from streamlit.components.v1 import declare_component
 from streamlit_folium import st_folium
 
 from ecological_context import (
@@ -46,10 +48,20 @@ SEARCH_STATE_KEYS = {
     "evidence_tab_0", "audio_mode_0",
 }
 
+MOBILE_WEB_METADATA_COMPONENT = declare_component(
+    "strepitus_mobile_web_metadata",
+    path=str(Path(__file__).parent / "components" / "mobile_web_metadata"),
+)
+
 
 def t(spanish: str, english: str) -> str:
     """Return the interface language while keeping scientific payloads unchanged."""
     return english if st.session_state.get("interface_language", "English") == "English" else spanish
+
+
+def inject_mobile_web_metadata() -> None:
+    """Expose the installation manifest to the containing Streamlit page."""
+    MOBILE_WEB_METADATA_COMPONENT(key="mobile_web_metadata")
 
 
 @st.dialog("Tutorial / Tutorial", width="large", icon=":material/menu_book:")
@@ -831,6 +843,7 @@ st.set_page_config(
     layout="wide",
 )
 st.logo("logos_e_imagenes/strepitus_silvae_logo_svg.svg", size="large")
+inject_mobile_web_metadata()
 
 st.title("Strepitus Silvae")
 st.caption(t("Copiloto de campo para transformar evidencia de fauna en registros Darwin Core verificables.", "Field copilot that transforms wildlife evidence into reviewable Darwin Core records."))
@@ -857,6 +870,13 @@ with st.sidebar:
     if st.checkbox("Usar un identificador de modelo personalizado"):
         model = st.text_input(t("Identificador personalizado", "Custom model identifier"), value=env_model)
     st.caption(t("La clave se lee exclusivamente desde `OPENAI_API_KEY` en el entorno.", "The key is read only from `OPENAI_API_KEY` in the environment."))
+    st.info(
+        t(
+            "En Android: abre el menú de Chrome y elige ‘Agregar a pantalla principal’ para usar esta app como acceso directo.",
+            "On Android: open Chrome's menu and choose ‘Add to Home screen’ to use this app as an app-like shortcut.",
+        ),
+        icon="📱",
+    )
     st.button(
         t("Nueva búsqueda", "New search"),
         icon=":material/restart_alt:",

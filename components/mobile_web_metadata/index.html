@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Strepitus Silvae mobile metadata</title>
+  </head>
+  <body>
+    <script>
+      (() => {
+        try {
+          const parentDocument = window.parent.document;
+          const staticRoot = `${window.parent.location.origin}/app/static/`;
+          const addHeadElement = (selector, tagName, attributes) => {
+            if (parentDocument.querySelector(selector)) return;
+            const element = parentDocument.createElement(tagName);
+            Object.entries(attributes).forEach(([key, value]) => element.setAttribute(key, value));
+            parentDocument.head.appendChild(element);
+          };
+          addHeadElement('link[data-strepitus-manifest]', 'link', {
+            rel: 'manifest', href: `${staticRoot}manifest.webmanifest`, 'data-strepitus-manifest': 'true'
+          });
+          addHeadElement('meta[name="theme-color"]', 'meta', {
+            name: 'theme-color', content: '#3B6D11'
+          });
+          addHeadElement('meta[name="mobile-web-app-capable"]', 'meta', {
+            name: 'mobile-web-app-capable', content: 'yes'
+          });
+        } catch (_) {
+          // The app remains fully usable if an embedding browser isolates the frame.
+        }
+      })();
+    </script>
+  </body>
+</html>
